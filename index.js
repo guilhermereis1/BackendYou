@@ -8,10 +8,11 @@ const port = 3000;
 app.use(cors());
 
 var corsOptions = {
-  origin: "*",
+  origin: "https://reactyout.vercel.app",
+  optionsSuccessStatus: 200,
 };
 
-app.get("/search_menu/:query", async (req, res) => {
+app.get("/search_menu/:query", cors(corsOptions), async (req, res) => {
   const query = req.params.query;
 
   (async = (req, response) => {
