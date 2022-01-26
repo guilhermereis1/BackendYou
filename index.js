@@ -54,8 +54,6 @@ app.get("/search_menu/:query", cors(corsOptions), async (req, res) => {
       await browser.close();
     })();
   })();
-
-  // https://you.com/api/ac?q=amazon
 });
 
 app.get(
