@@ -12,6 +12,7 @@ var corsOptions = {
   optionsSuccessStatus: 200,
 };
 
+// This endpoint return the list of terms
 app.get("/search_menu/:query", cors(corsOptions), async (req, res) => {
   const query = req.params.query;
 
