@@ -8,7 +8,7 @@ const port = 3000;
 app.use(cors());
 
 var corsOptions = {
-  origin: "http://154.53.43.234:3001",
+  origin: "*",
   optionsSuccessStatus: 200,
 };
 
